@@ -7,6 +7,13 @@
   font-size: 12px;
   font-weight: bold;
 }
+.header #navItem {
+  transition: 0.3s;
+}
+.header #navItem:hover {
+  color: #B9B9B9;
+  transform: scale(1.1);
+}
 
 .commonSections {
   min-height: 100vh;
@@ -22,9 +29,64 @@
 
 .logoPC {
   width: 240px;
-  margin: 0 20px 0 -10px;
+  margin: 0 40px 0 -10px;
 }
 
+#button {
+  padding: 15px 35px;
+  border: 2px solid #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 15vh;
+  font-weight: 500;
+  font-size: 12px;
+}
+.footer a {
+  position: relative;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+.footer a:hover {
+  color: #B9B9B9;
+}
+.footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 0.5px solid #FFFFFF;
+  opacity: 0;
+  transition: opacity 1s, width 0.5s, border 0.5s;
+}
+.footer a:hover::after {
+  width: 100%;
+  opacity: 1;
+  border: 0.5px solid #B9B9B9;
+}
+
+@media (max-width: 405px) {
+  .logoPC {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .logoPC {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
 .commonSections.section01 {
   background-image: url(../images/home/01.jpg);
 }
@@ -40,6 +102,34 @@
 
 .titlePadding {
   padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+  margin-bottom: 25px;
+}
+
+.mediumTitle {
+  width: 650px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle,
+.mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+@media (max-width: 410px) {
+  .shortTitle,
+.mediumTitle {
+    width: auto;
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
