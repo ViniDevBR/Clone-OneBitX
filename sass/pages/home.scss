@@ -1,0 +1,17 @@
+.commonSections{
+  &.section01{
+    background-image: url(../images/home/01.jpg);
+  }
+  &.section02{
+    background-image: url(../images/home/03.jpg);
+  }
+  &.section03{
+    background-image: url(../images/home/02.gif);
+  }
+  &.section04{
+    background-image: url(../images/home/04.jpg);
+  }
+}
+.titlePadding{
+  padding-top: 200px;
+}
