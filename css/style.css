@@ -10,6 +10,7 @@ body {
 .header {
   font-size: 12px;
   font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 .header #navItem {
   transition: 0.3s;
@@ -285,6 +286,66 @@ body {
   #overView {
     font-size: 10px;
   }
+}
+.commonSections.section08 {
+  background-image: url(../images/humanFlight/01.jpg);
+}
+.commonSections.section10 {
+  background-image: url(../images/humanFlight/02.jpg);
+}
+.commonSections.section11 {
+  background-image: url(../images/humanFlight/03.jpg);
+}
+.commonSections.section12 {
+  background-image: url(../images/humanFlight/04.jpg);
+}
+.commonSections.section13 {
+  background-image: url(../images/humanFlight/05.jpg);
+}
+
+.section09 {
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section09 .travel {
+  font-weight: 400;
+  font-size: 20px;
+  width: 800px;
+}
+.section09 .travel a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.titleHuman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+.titleHuman .titleHumanDesc {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  text-shadow: 1px 1px 1px black;
+}
+.titleHuman .subTitle {
+  text-shadow: 1px 1px 1px black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.titleHuman img {
+  width: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */
