@@ -292,31 +292,40 @@ body {
 }
 .commonSections.section10 {
   background-image: url(../images/humanFlight/02.jpg);
-}
-.commonSections.section11 {
-  background-image: url(../images/humanFlight/03.jpg);
-}
-.commonSections.section12 {
-  background-image: url(../images/humanFlight/04.jpg);
-}
-.commonSections.section13 {
-  background-image: url(../images/humanFlight/05.jpg);
-}
-
-.section09 {
-  height: 25vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: black;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.commonSections.section11 {
+  background-image: url(../images/humanFlight/03.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commonSections.section12 {
+  background-image: url(../images/humanFlight/04.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commonSections.section13 {
+  background-image: url(../images/humanFlight/05.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section09 {
+  background-size: cover;
+  background: transparent no-repeat center;
+}
 .section09 .travel {
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+  height: 25vh;
+  color: #D8D8D8;
   width: 800px;
 }
 .section09 .travel a {
@@ -346,6 +355,76 @@ body {
 }
 .titleHuman img {
   width: 130px;
+}
+
+.right {
+  margin-left: 55%;
+  width: auto;
+}
+
+.left {
+  margin-right: 40%;
+  width: 60%;
+}
+
+#textDesc h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#textDesc .missionSubtitle {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .titleHuman .titleHumanDesc {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .titleHuman .titleHumanDesc {
+    font-size: 80px;
+  }
+}
+@media (max-width: 577px) {
+  .titleHuman .titleHumanDesc {
+    font-size: 60px;
+  }
+  .titleHuman .subTitle {
+    font-size: 20px;
+  }
+  .section09 .travel {
+    width: auto;
+    height: 50vh;
+  }
+  .right {
+    margin-left: 40%;
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  .titleHuman .titleHumanDesc {
+    font-size: 40px;
+  }
+  .titleHuman .subTitle {
+    font-size: 10px;
+  }
+  .section09 .travel {
+    width: auto;
+  }
+}
+@media (max-width: 450px) {
+  .titleHuman .titleHumanDesc {
+    font-size: 40px;
+  }
+  .titleHuman .subTitle {
+    font-size: 10px;
+  }
+  .right,
+.left {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
