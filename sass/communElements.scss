@@ -1,3 +1,6 @@
+body{
+  background-color: #000000;
+}
 .header{
   font-size: 12px;
   font-weight: bold;
@@ -35,6 +38,9 @@
   font-weight: 500;
   font-size: 12px;
 
+  .copyVini{
+    color: $copyright;
+  }
   a{
     position: relative;
     text-decoration: none;
@@ -63,19 +69,20 @@
   }
 }
 
-@media (max-width: 405px){
+@media (max-width: 425px){
+  
   .logoPC{
     width: 180px;
     margin-top: 15px;
   }
   .footer{
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media (max-width: 350px){
   .logoPC{
-    width: 150px;
+    width: 145px;
     margin-top: 15px;
   }
 }
