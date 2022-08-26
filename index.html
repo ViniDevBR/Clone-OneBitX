@@ -13,6 +13,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
 </head>
@@ -34,7 +35,7 @@
                     <a class="nav-link active" aria-current="page" href="../clone-OneBitX/falcon9.html" id="navItem">FALCON 9</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="/humamFlight.html" id="navItem">HUMAN SPACE FLIGHT</a>
+                    <a class="nav-link active" href="../clone-OneBitX/humanSpace.html" id="navItem">HUMAN SPACE FLIGHT</a>
                   </li>
                 </ul>
               </div>
@@ -42,7 +43,8 @@
           </nav>
         </header>
       </div>
-      <section class="container titlePadding">
+      <section class="container titlePadding" data-aos="fade-up"
+      data-aos-duration="1500">
         <p class="h5" id="launch">LANÇAMENTO A CAMINHO</p>
         <p class="h1">MISSÃO EQUIPE-3</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
@@ -53,7 +55,7 @@
     </div>
 
     <section class="container-fluid commonSections section02">
-      <div class="container titlePadding">
+      <div class="container titlePadding" data-aos="fade-right" data-aos-duration="1500">
         <p class="h5" id="launch">MISSÃO CONCLUÍDA</p>
         <p class="h1 shortTitle">MISSÃO EQUIPE-2 RETORNOU PARA A TERRA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
@@ -61,7 +63,7 @@
     </section>
 
     <section class="container-fluid commonSections section03">
-      <div class="container titlePadding">
+      <div class="container titlePadding" data-aos="fade-down" data-aos-duration="1500">
         <p class="h5" id="launch">MISSÃO CONCLUÍDA</p>
         <p class="h1 shortTitle">DRAGON RETORNOU PARA A TERRA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
@@ -69,7 +71,7 @@
     </section>
 
     <section class="container-fluid commonSections section04">
-      <div class="container titlePadding">
+      <div class="container titlePadding" data-aos="fade-down-right" data-aos-duration="1500">
         <p class="h1 mediumTitle">STARSHIP POUSA ASTROUNAUTAS DA NASA NA LUA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
       </div>
@@ -81,5 +83,9 @@
       <a href="https://github.com/ViniDevBR" target="_blank" class="me-4">GitHub</a>
       <a href="https://www.linkedin.com/in/vinicius-celestino/" target="_blank">Linkedin</a>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
